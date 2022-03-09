@@ -1023,7 +1023,7 @@ body:after {
     color: #000; }
 
 
-    /******추가스타일********/
+    /**********************************************추가스타일*************************************************************/
 
     /**폰트**/
     @font-face {
@@ -1084,23 +1084,11 @@ body:after {
     #home-section{width: 100%; height: 800px; background: url(../images/bg_bubbles.png) center 0 / 500px repeat-y, linear-gradient(0deg, yellow , transparent 50%);}
        /* animation: move 10s linear infinite; } */
   
-/* 
-     @keyframes move{
 
-      0%{background-position: center 0; transition: ease-in-out}
-      100%{background-position: center -800px; transition: ease-in-out;}
-    }
-
-    @keyframes movebg{
-
-      0%{transition: ease-in-out}
-      100%{transform: scale(1.1); transition: ease-in-out;}
-    } */
-  
     .main_bg{background-image: url(../images/main_1.png); 
     background-position: center center;
     background-repeat: no-repeat; 
-    background-size: 90%; animation: movebg 10s linear infinite;}
+    background-size: 90%;}
 
 /*메인비주얼 텍스트*/
 .col-lg-8{z-index: 5;}
@@ -1115,13 +1103,27 @@ body:after {
   footer{width: 100%; background-color:#C2E54F; text-align: center; height: 220px;}
   footer a{color: #fff; font-size: 1em;}
   .info{color: #fff; display: block; width: 100%;}
-  .info > p{font-size: 0.7em;}
+  .info > p{font-size: 0.7em; padding-top: 50px;}
   .footer-title{color: #fff; font-size: 2em; }
   .box1::before,.box1::after{display: block; content: ''; clear: both;}
   .name{float: left; width: 33.3%;}
   .contact{float: left; width: 33.3%;} 
   .follow{float: left; width: 33.3%;}
   .site-section{padding: 2%;}
+
+
+  .roundcl{
+    width: 200px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    transform: translateX(50%);
+  }
+
+  .email{
+    color: #C2E54F;;
+  }
+
 
 
 
@@ -1173,5 +1175,45 @@ footer{height: auto;}
   }
   
   /********************버블끝************************/
+
+
+  /********************블로그컨텐츠************************/
+.first-section{
+
+}
+
+
+
+  .blog-content > h2{
+    padding-top: 150px;
+    font-weight: bolde;
+  }
+
+  .blogimgbf::before, .blogimgbf::after{
+    display: block; content: ''; clear: both;
+  
+  }
+
+  .blogimgbf{
+    width: 100%;
+  }
+
+  .blogimgbf > img{
+    float: left;
+    width: 350px;
+    height: 350px;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .blogimgbf > img:nth-child(2){
+    margin-left: 30px;
+  }
+
+  .blog-content img:hover{
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+  }
+
 
 
